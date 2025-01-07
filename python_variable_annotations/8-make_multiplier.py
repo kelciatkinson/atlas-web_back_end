@@ -10,5 +10,5 @@ def make_multiplier(multiplier: float) -> typing.Callable[[float], float]:
     """Returns function that multiplies float variable by itself."""
     def multiply(n: float) -> float:
         """Multiplies float variable by itself."""
-        return n * multiplier 
+        return n * multiplier
     return multiply
