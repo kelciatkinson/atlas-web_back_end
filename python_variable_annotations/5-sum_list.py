@@ -7,5 +7,5 @@ as an argument and returns their sum as a float.
 
 
 def sum_list(input_list: typing.List[float]) -> float:
-    """Returns the sum of a list of floats."""
+    """Returns the sum of a list of given floats."""
     return sum(input_list)
