@@ -6,6 +6,7 @@ specified max_delay.
 """
 import asyncio
 import importlib.util
+import typing
 
 
 module_name = "wait_random"
