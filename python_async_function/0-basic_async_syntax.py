@@ -2,7 +2,8 @@
 import asyncio
 import random
 """
-Defines an aynchronous coroutine.
+Defines an aynchronous coroutine that takes in an integer and returns
+a randomized float based on the argument given or the default value.
 """
 
 
