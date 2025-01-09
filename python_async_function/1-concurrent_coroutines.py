@@ -18,7 +18,7 @@ spec.loader.exec_module(module)
 wait_random = module.wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> float:
+async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     """
     Return the list of all of the delays in float values
     """
