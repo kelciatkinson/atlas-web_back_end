@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-import asyncio
-import random
 """
 Defines an aynchronous coroutine that takes in an integer and returns
 a randomized float based on the argument given or the default value.
 """
+import asyncio
+import random
+
 
 
 async def wait_random(max_delay: int = 10) -> float:
