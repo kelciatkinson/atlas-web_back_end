@@ -8,7 +8,7 @@ from base_caching import BaseCaching
 class BasicCache(BaseCaching):
     """
     Implements a basic caching system that
-    stores and retrieves items from caache. 
+    stores and retrieves items from caache.
     """
 
     def put(self, key, item):
