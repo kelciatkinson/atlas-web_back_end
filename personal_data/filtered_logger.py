@@ -3,9 +3,10 @@
 Module for filtering sensitive info from log messages.
 """
 import re
+import typing
 
 
-def filter_datum(fields: list, redaction: str,
+def filter_datum(fields: typing.List[str], redaction: str,
                  message: str, separator: str) -> str:
     """Returns the log message obfuscated.
     """
