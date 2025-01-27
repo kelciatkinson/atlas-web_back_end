@@ -57,13 +57,16 @@ class Server:
         data = []
         current_index = index
         count = 0
-        
+
         if current_index in indexed_dataset:
             data.append(indexed_dataset[current_index])
             count += 1
         current_index += 1
-    
-        next_index = current_index if current_index < len(self.dataset()) else None
+
+        if current_index < len(self.dataset()):
+            next_index = current_index
+        else:
+            None
 
         return {
             "index": index,
