@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Modle for authentication
+"""Module for authentication
 """
 from flask import request
 from typing import List, TypeVar
@@ -39,8 +39,3 @@ class Auth():
         """Returns None - request will be the Flask request object
         """
         return None
-
-class BasicAuth(Auth):
-    """Empty class inherting from Auth.
-    """
-    pass
