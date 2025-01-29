@@ -39,3 +39,8 @@ class Auth():
         """Returns None - request will be the Flask request object
         """
         return None
+
+class BasicAuth(Auth):
+    """Empty class inherting from Auth.
+    """
+    pass
