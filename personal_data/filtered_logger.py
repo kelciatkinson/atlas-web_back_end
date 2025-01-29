@@ -71,3 +71,22 @@ class RedactingFormatter(logging.Formatter):
         record.msg = filter_datum(self.fields, self.REDACTION,
                                   record.msg, self.SEPARATOR)
         return super().format(record)
+
+
+def main():
+    """Main function to retrieve and display user data.
+    """
+    logger = get_logger()
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM users;")
+    
+    fields = cursor.column_names
+    for row in cursor:
+        message = "; ".join(
+            f"{fields[i]}={row[i]}" for i in range(len(fields))
+        )
+        logger.info(message)
+
+    cursor.close()
+    db.close()
