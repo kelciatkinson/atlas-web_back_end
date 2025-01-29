@@ -80,7 +80,7 @@ def main():
     db = get_db()
     cursor = db.cursor()
     cursor.execute("SELECT * FROM users;")
-    
+
     fields = cursor.column_names
     for row in cursor:
         message = "; ".join(
