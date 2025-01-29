@@ -46,3 +46,6 @@ personal_data/__pycache__/filtered_logger.cpython-312.pyc
 personal_data/main.sql
 personal_data/__pycache__/encrypt_password.cpython-312.pyc
 python_async_function/__pycache__/1-concurrent_coroutines.cpython-312.pyc
+Basic_authentication/api/v1/auth/__pycache__/auth.cpython-312.pyc
+Basic_authentication/api/v1/auth/__pycache__/__init__.cpython-312.pyc
+Basic_authentication/main_0.py
