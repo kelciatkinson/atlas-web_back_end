@@ -41,11 +41,12 @@ def forbidden(error) -> str:
     """
     return jsonify({"error": "Forbidden"}), 403
 
+
 def authorization_header(self, request=None) -> str:
     """Returns the Authorization header from request"""
     if request is None:
         return None
-    
+
     return request.headers.get("Authorization", None)
 
 
@@ -57,8 +58,8 @@ def authorize_request():
         return
 
     excluded_paths = ["/api/v1/status/",
-                     "/api/v1/unauthorized/",
-                     "/api/v1/forbidden/"]
+                      "/api/v1/unauthorized/",
+                      "/api/v1/forbidden/"]
 
     if not auth.require_auth(request.path, excluded_paths):
         return
