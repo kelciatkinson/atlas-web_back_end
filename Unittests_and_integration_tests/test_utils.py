@@ -8,7 +8,7 @@ from typing import Mapping, Sequence, Any
 from parameterized import parameterized
 
 
-class TestUtils(unittest.TestCase):
+class TestAccessNestedMap(unittest.TestCase):
     """Unit Test Class
     """
 
