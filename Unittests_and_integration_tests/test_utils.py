@@ -18,7 +18,10 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
         ({"a": {"b": 2}}, ("a", "b"), 2),
     ])
-    def test_access_nested_map(self, nested_map: Mapping, path: Sequence, expected: Any):
+    def test_access_nested_map(self,
+                               nested_map: Mapping,
+                               path: Sequence,
+                               expected: Any):
         """Unit Test Method
         """
         self.assertEqual(access_nested_map(nested_map, path), expected)
@@ -27,10 +30,13 @@ class TestAccessNestedMap(unittest.TestCase):
         ({}, ("a", )),
         ({"a": 1}, ("a", "b"))
     ])
-    def test_access_nested_map_exception(self, nested_map: Mapping, path: Sequence):
+    def test_access_nested_map_exception(self,
+                                         nested_map: Mapping,
+                                         path: Sequence):
         """Test for exceptions
         """
         self.assertRaises(KeyError)
+
 
 class TestGetJson(unittest.TestCase):
     """Unit Test Class for get_json
@@ -40,7 +46,6 @@ class TestGetJson(unittest.TestCase):
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False})
     ])
-
     @patch("requests.get")
     def test_get_json(self, test_url, test_payload, mock_get):
         """Unit Test Method for get_json to mock and return a response
@@ -56,11 +61,14 @@ class TestGetJson(unittest.TestCase):
 
         self.assertEqual(get_json(test_url), test_payload)
 
+
 class TestMemoize(unittest.TestCase):
     """Class to test memoize
     """
     def test_memoize(self):
-        """Test that when calling a_property twice, a_method is only called once"""
+        """Test that when calling a_property twice
+        a_method is only called once
+        """
         class TestClass:
             def a_method(self):
                 return 42
@@ -72,11 +80,11 @@ class TestMemoize(unittest.TestCase):
         with patch.object(TestClass, 'a_method') as mock_method:
             mock_method.return_value = 42
             test_class = TestClass()
-            
+
             first_result = test_class.a_property
             second_result = test_class.a_property
-            
+
             mock_method.assert_called_once()
-            
+
             self.assertEqual(first_result, 42)
             self.assertEqual(second_result, 42)
