@@ -71,3 +71,5 @@ Basic_authentication/.DS_Store
 Unittests_and_integration_tests/__pycache__/test_client.cpython-312.pyc
 Unittests_and_integration_tests/__pycache__/client.cpython-312.pyc
 MySQL_Advanced/tmp_res
+0x0B_redis_basic/__pycache__/exercise.cpython-312.pyc
+0x0B_redis_basic/main.py
