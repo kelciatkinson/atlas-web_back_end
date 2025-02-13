@@ -4,7 +4,7 @@ database. It uses random key by UUID to store data.
 """
 import redis
 import uuid
-from typing import Union, Callable
+from typing import Union, Callable, Optional
 
 
 class Cache():
