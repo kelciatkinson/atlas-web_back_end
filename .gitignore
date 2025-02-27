@@ -57,7 +57,7 @@ Basic_authentication/main_2.py
 Basic_authentication/main_4.py
 Basic_authentication/main_5.py
 Basic_authentication/api/v1/__pycache__/app.cpython-312.pyc
-Basic_authentication/main_6.py
+Basic_aPuthentication/main_6.py
 Basic_authentication/api/v1/__pycache__/app.cpython-312.pyc
 Basic_authentication/api/v1/__pycache__/app.cpython-312.pyc
 Basic_authentication/api/v1/__pycache__/app.cpython-312.pyc
@@ -77,3 +77,4 @@ NoSQL/__pycache__/8-all.cpython-312.pyc
 NoSQL/8-main.py
 MySQL_Advanced/names.sql
 Node_JS/0-main.js
+Node_JS/dump.rdb
