@@ -1,0 +1,14 @@
+{
+  "name": "pld",
+  "version": "1.0.0",
+  "description": "queueing system in js simulation",
+  "main": "queue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bullmq": "^5.41.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

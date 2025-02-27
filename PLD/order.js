@@ -1,11 +1,11 @@
 import mealQueue from './queue.js';
-import { menu } from './menu.js'; // Import cooking times
+import {menu} from './menu.js'; // Import cooking times
 
 const customers = ["Alice", "Bob", "Charlie", "David", "Emma"];
 
 async function placeOrder() {
     const customer = customers[Math.floor(Math.random() * customers.length)];
-    
+    a
     const meal = [
         menu.starters[Math.floor(Math.random() * menu.starters.length)],
         menu.mainCourses[Math.floor(Math.random() * menu.mainCourses.length)],

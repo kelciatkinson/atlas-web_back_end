@@ -15,4 +15,3 @@ export const menu = {
         { name: "Chocolate Mousse", prepTime: 10* 100 } // 10 min
     ]
   };
-  
