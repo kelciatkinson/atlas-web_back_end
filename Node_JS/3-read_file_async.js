@@ -37,7 +37,6 @@ async function countStudents(path) {
               `Number of students in ${field}: ${students.length}. List: ${students.join(', ')}`
             );
         }
-        return Promise.resolve();
     } catch (error) {
         throw new Error('Cannot load the database');
     }
