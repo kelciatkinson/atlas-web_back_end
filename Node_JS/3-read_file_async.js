@@ -18,7 +18,7 @@ async function countStudents(path) {
         // Removes header row
         const students = lines.slice(1);
         
-        console.log(`Number of students: ${students.length}`);
+        output = `Number of students: ${students.length}\n`;
     
         // Creates object to store counts and names by fieldb
         const studentsByField = {};
@@ -33,10 +33,10 @@ async function countStudents(path) {
     
         // Prints results for each field
         for (const [field, students] of Object.entries(studentsByField)) {
-            console.log(
-              `Number of students in ${field}: ${students.length}. List: ${students.join(', ')}`
-            );
+            output += `Number of students in ${field}: ${students.length}. List: ${students.join(', ')}`;
         }
+        console.log(output);
+        return output
     } catch (error) {
         throw new Error('Cannot load the database');
     }
