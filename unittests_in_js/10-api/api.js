@@ -2,11 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 7865;
 
-
-// Add middleware to parse JSON bodies - this needs to be before the routes
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
 
 app.get('/', (req, res) => {
     res.send("Welcome to the payment system");
@@ -26,8 +22,8 @@ app.get('/available_payments', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-    const username = req.body.username;
-    res.send(`Welcome ${username}`);
+    const userName = req.body.userName;
+    res.send(`Welcome ${userName}`);
 });
 
 app.listen(PORT, () => {
